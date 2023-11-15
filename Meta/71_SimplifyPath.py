@@ -28,5 +28,47 @@ Output: "/home/foo"
 Explanation: In the canonical path, multiple consecutive slashes are replaced by a single one.
 '''
 
+# ip: /../abc//./def/
+# simplified = /abc/def
+# Time: O(n), Membory: 
+# DS: Stack to build file path
+
 class Solution:
     def simplifyPath(self, path: str) -> str:
+        '''
+        Solution 2: 
+        Split by "/", and then traverse the array and add items to stack which are not in ".", "", ".."
+        If you see ".." and stack is not empty, pop the stack
+
+        Split is O(n)
+        For loop is O(n)
+        Join is O(n)
+        Space: Stack is filled: O(n)
+        '''
+        stack2 = []
+        items = path.split("/") # ["", "..","abc", "",".","def"]
+        for item in items:
+            if item in [".", "..", ""]:
+                if item == ".." and stack2:
+                    stack2.pop()
+            else:
+                stack2.append(item)
+        return "/" + "/".join(stack2)
+
+
+        # Solution 1
+        stack = []
+        cur = ""
+        for c in path + "/":
+            if c == "/":
+
+                if cur == "..":
+                    if stack: stack.pop()
+                elif cur != "" and cur != ".":
+                    stack.append(cur)
+                cur = ""
+            else:
+                cur += c 
+
+        return "/" + "/".join(stack)
+

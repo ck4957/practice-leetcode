@@ -29,3 +29,13 @@ def missing_number(nums):
     expected_sum = n * (n + 1) // 2
     actual_sum = sum(nums)
     return expected_sum - actual_sum
+
+def missing_number_2(nums):
+    nums.sort() # Sort the array: n log n
+
+    for i, v in enumerate(nums):
+        if i != v:
+            return i
+
+        if v == len(nums)-1:
+            return v+1

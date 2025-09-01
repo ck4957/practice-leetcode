@@ -32,9 +32,9 @@ Data Structures Used:
 def numIslands_bfs(grid):
     if not grid:
         return 0
-    visited = [[False for _ in range(len(grid[0]))] for _ in range(len(grid))]
+    Rows, Cols = len(grid), len(grid[0])
+    visited = [[False for _ in range(Cols)] for _ in range(Rows)]
     island_count = 0
-    R, C = len(grid), len(grid[0])
 
     def bfs(r, c):
         queue = collections.deque()
@@ -44,12 +44,12 @@ def numIslands_bfs(grid):
             x, y = queue.popleft()
             for dx, dy in [(1, 0), (-1, 0), (0, -1), (0, 1)]:
                 nx, ny = x + dx, y + dy
-                if 0 <= nx < R and 0 <= ny < C and grid[nx][ny] == '1' and not visited[nx][ny]:
+                if 0 <= nx < Rows and 0 <= ny < Cols and grid[nx][ny] == '1' and not visited[nx][ny]:
                     visited[nx][ny] = True
                     queue.append((nx, ny))
 
-    for i in range(R):
-        for j in range(C):
+    for i in range(Rows):
+        for j in range(Cols):
             if grid[i][j] == '1' and not visited[i][j]:
                 bfs(i, j)
                 island_count += 1
@@ -61,11 +61,12 @@ def numIslands_dfs(grid):
     if not grid:
         return 0
 
-    visited = [[False for _ in range(len(grid[0]))] for _ in range(len(grid))]
+    Rows, Cols = len(grid), len(grid[0])
+    visited = [[False for _ in range(Cols)] for _ in range(Rows)]
     island_count = 0
 
     def dfs(r, c):
-        if r < 0 or r >= len(grid) or c < 0 or c >= len(grid[0]):
+        if r < 0 or r >= Rows or c < 0 or c >= Cols:
             return
         if grid[r][c] == '0' or visited[r][c]:
             return

@@ -11,7 +11,19 @@ Output: 7
 Time Complexity: O(n), where n is the number of points.
 Space Complexity: O(1), as we are using a constant amount of space.
 
-'''
+Manhattan Distance:
+The Manhattan distance between two points (x1, y1) and (x2, y2) is given by:
+|x2 - x1| + |y2 - y1|
+
+Pseudo code:
+
+1. Initialize total_time to 0.
+2. Loop through the points list:
+   a. For each point, calculate the Manhattan distance from the previous point.
+   b. Add the distance to total_time.
+3. Return total_time.
+
+```
 
 
 '''

@@ -28,4 +28,19 @@ Note that square 2 only brushes the right side of square 1, which does not count
 
 '''
 
-
+def falling_squares(positions):
+    heights = []
+    max_height = 0
+    for left, size in positions:
+        right = left + size
+        current_height = 0
+        for i in range(len(heights)):
+            if left < heights[i][1] and right > heights[i][0]:
+                current_height = max(current_height, heights[i][2])
+        new_height = current_height + size
+        heights.append((left, right, new_height))
+        max_height = max(max_height, new_height)
+    result = []
+    for i in range(len(positions)):
+        result.append(max_height)
+    return result

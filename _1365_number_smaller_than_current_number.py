@@ -5,6 +5,16 @@ Example:
 Input: nums = [8, 1, 2, 2, 3]
 Output: [4, 0, 1, 1, 2]
 
+Pseudo code:
+
+1. Initialize an empty list (result) to store the counts.
+2. Loop through each element (num) in the input list (nums):
+   a. Initialize a count variable to 0.
+   b. Loop through the list again and compare each element with num:
+      i. If an element is smaller than num, increment the count.
+   c. Append the count to the result list.
+3. Return the result list.
+
 Time Complexity: O(n^2) - In the worst case, we compare each element with all others.
 Space Complexity: O(1) - We are using a constant amount of space for the count variable.
 

@@ -27,6 +27,15 @@ Data Structures Used:
 - Queue (for the BFS implementation)
 - Visited matrix (to keep track of visited cells)
 
+Pseudo code:
+
+1. Initialize a counter for the number of islands.
+2. Loop through each cell in the grid:
+   a. If the cell is '1' (land) and not visited:
+      i. Increment the island counter.
+      ii. Perform a BFS or DFS from this cell to mark all connected land cells as visited.
+3. Return the island counter.
+
 '''
 
 def numIslands_bfs(grid):

@@ -12,6 +12,17 @@ Input: numbers = [2, 7, 11, 15], target = 9
 Output: (0, 1)
 
 Worst Case: If no solution exists, we still need to check all elements.
+
+Pseudo code:
+
+1. Initialize an empty dictionary (num_dict) to store numbers and their indices.
+2. Loop through the array with index:
+   a. For each number, calculate its complement (target - num).
+   b. Check if the complement exists in num_dict:
+      i. If it exists, return the pair of indices (num_dict[complement], current_index).
+   c. If it doesn't exist, add the current number and its index to num_dict.
+3. If no pair is found, return None.
+
 '''
 def two_sum(numbers, target):
     num_dict = {} # Dictionary to store numbers and their indices

@@ -13,6 +13,17 @@ Not 7-1 = 6, as selling price needs to be larger than buying price.
 
 Time Complexity: O(n), where n is the number of days (length of the prices array).
 Space Complexity: O(1), as we are using only a few extra variables.
+
+Pseudo code:
+
+1. Initialize min_price to a very high value (infinity).
+2. Initialize max_profit to 0.
+3. Loop through each price in the prices array:
+   a. Update min_price to be the minimum of min_price and the current price.
+   b. Calculate the potential profit by subtracting min_price from the current price.
+   c. Update max_profit to be the maximum of max_profit and the potential profit.
+4. Return max_profit.
+
 '''
 
 def maxProfit(prices):

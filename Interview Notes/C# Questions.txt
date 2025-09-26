@@ -1,0 +1,269 @@
+#ASP.NET Core
+Cross Platform, Open Source Framework for building clue based web application
+It can run on Full .NET Framework or .NET Core
+
+#.NET Core
+1. Modular Version of .NET Framework
+2. Portable across all platforms
+3. Subset of .NET Framework
+
+MVC
+-loosely coupled, separation of concerns
+-testability, reuse
+-ea
+Model
+-Handles the logic of your application data
+-Contains the code to store or retrieve the data
+
+View
+-Handles the part for the display of the data. (HTML)
+
+Controller
+- Handles the interaction between the view and model
+- Handling User Input
+
+View and Controller depends on Model
+Controller also depends on View
+
+
+Q: What are the differences between local and global?
+A:Variables are declared inside a function is called local variables and 
+Variables are declared outside any function is called global variable
+
+
+Q: Use of Private constructor?
+A: Class with private constructor cannot be inherited
+Cannot create object of that class
+Do not want to create instances of certain classes like utility, common routine classes
+
+Q: Difference between unique & primary key
+A: Unique can have nulls and primary key cannot
+Can create multiple Unique keys in same table
+Unique creates non-clustered index and PK creates clustered index.
+
+Q:Difference between Convert.toString() and toString()?
+A: convert.toString() handles null and toString doesnt handle null
+Q: Why & when or where we use an abstract class?
+A: In organisation, two type of employees: full time and contract
+Both employees have properties like : ID, FirstName, LastName, MonthlySalary.
+So the first three properties are duplicated in both full time and contact class. and now we introduce middle name property, we need to add it in both classes
+
+But Fulltime Monthly Salary : Annual Salary/12
+COntract salary = Total HOurs * Hourly Pay
+
+
+
+Q: Store diff. types in an array in c#?
+A: Yes, if we create an object array. (Override the ToString() method to get meaningful output)
+public override string ToString(){ return this.Name; }
+
+Q: What is Jagged Array?
+A jagged array is array of arrays.
+eg string[][] jaggArr = new string[3][];
+jaggArr[0] = new string[3];
+jaggArr[0][0] = "Masters";
+
+Q: Different types of Collections in .NET?
+A: Collection
+1.INdexed based : a.Array b.List
+2. Key Value Pair: a.HashTable  b.SortedList
+3.Prioritized Collection a.Stack b.Queue
+4.Specialized collection a.String b.Hybrid Dictionary
+
+Q: What are Generics and Generics Collections?
+
+Q: Authentication and Authorization?
+
+Authentication ---> Authorization
+-(Who are you?)		(What right's you have)
+-Does the users			Identifying ur rights
+exits in database
+-Identifying who the 
+users is
+
+Q: MVC Request Life Cycle
+
+Request --> Routing (MVC HttpHandler) --> Controller Initialization
+
+1) What is C-Sharp (C#)?
+C# is a type-safe, managed and object oriented language, which is compiled by .Net framework
+for generating intermediate language (IL).
+
+2) Explain the features of C#?
+Below are some of the features supported in C# -
+Constructors and Destructors
+Properties
+Passing Parameters
+Arrays
+Main
+XML Documentation and
+Indexers
+
+
+3) List some of the advantages of C#?
+Below are the advantages of C# -
+Easy to learn
+Object oriented
+Component oriented
+Part of .NET framework
+
+4) What are IDE’s provided by Microsoft for C# development?
+Below are the IDE’s used for C# development –
+Visual Studio Express (VCE)
+Visual Studio (VS)
+Visual Web Developer
+
+
+5) Explain the types of comments in C#?
+
+Below are the types of comments in C# -
+
+Single Line Comment Eg : //
+Multiline Comments Eg: /* */
+XML Comments Eg : ///
+
+6) Explain sealed class in C#?
+
+Sealed class is used to prevent the class from being inherited from other classes.
+So “sealed” modifier also can be used with methods to avoid the methods to override in the child classes.
+
+7) Give an example of using sealed class in C#?
+
+Below is the sample code of sealed class in C# -
+
+class X {}
+sealed class Y : X {}
+
+Sealed methods –
+
+class A
+{
+ protected virtual void First() { }
+ protected virtual void Second() { }
+}
+class B : A
+{
+ sealed protected override void First() {}
+ protected override void Second() { }
+}
+If any class inherits from class “B” then method – “First” will not be overridable as this method is sealed in class B.
+
+
+Must Read - .Net Framework Interview Questions and Answers
+
+8) List out the differences between Array and ArrayList in C#?
+
+Array stores the values or elements of same data type but arraylist stores values of different datatypes.
+Arrays will use the fixed length but arraylist does not uses fixed length like array.
+
+9) Why to use “using” in C#?
+
+“Using” statement calls – “dispose” method internally, whenever any exception occurred in any method call and in “Using” statement objects are read only and cannot be reassignable or modifiable.
+
+10) Explain namespaces in C#?
+
+Namespaces are containers for the classes. We will use namespaces for grouping the related classes in C#. “Using” keyword can be used for using the namespace in other namespace.
+
+11) Why to use keyword “const” in C#? Give an example.
+
+“Const” keyword is used for making an entity constant. We can’t reassign the value to constant.
+
+Eg: const string _name = "Test";
+
+12) What is the difference between “constant” and “readonly” variables in C#?
+
+“Const” keyword is used for making an entity constant. We cannot modify the value later in the code. Value assigning is mandatory to constant variables.
+“readonly” variable value can be changed during runtime and value to readonly variables can be assigned in the constructor or at the time of declaration.
+
+
+13) Explain “static” keyword in C#?
+
+“Static” keyword can be used for declaring a static member. If the class is made static then all the members of the class are also made static. If the variable is made static then it will have a single instance and the value change is updated in this instance.
+
+14) What is the difference between “dispose” and “finalize” variables in C#?
+
+Dispose - This method uses interface – “IDisposable” interface and it will free up both managed and unmanaged codes like – database connection, files etc.
+Finalize - This method is called internally unlike Dispose method which is called explicitly. It is called by garbage collector and can’t be called from the code.
+
+15) How the exception handling is done in C#?
+In C# there is a “try… catch” block to handle the error.
+
+16) Can we execute multiple catch blocks in C#?
+No. Once any exception is occurred it executes specific exception catch block and the control comes out.
+
+17) Why to use “finally” block in C#?
+“Finally” block will be executed irrespective of exception. So while executing the code in try block when exception is occurred, control is returned to catch block and at last “finally” block will be executed. So closing connection to database / releasing the file handlers can be kept in “finally” block.
+
+18) What is the difference between “finalize” and “finally” methods in C#?
+Finalize – This method is used for garbage collection. So before destroying an object this method is called as part of clean up activity.
+Finally – This method is used for executing the code irrespective of exception occurred or not.
+
+
+19) What is the difference between “throw ex” and “throw” methods in C#?
+
+“throw ex” will replace the stack trace of the exception with stack trace info of re throw point.
+“throw” will preserve the original stack trace info.
+
+20) Can we have only “try” block without “catch” block in C#?
+
+Yes we can have only try block without catch block.
+
+21) List out two different types of errors in C#?
+
+Below are the types of errors in C# -
+
+Compile Time Error
+Run Time Error
+
+22) Do we get error while executing “finally” block in C#?
+
+Yes. We may get error in finally block.
+
+23) Mention the assembly name where System namespace lies in C#?
+
+Assembly Name – mscorlib.dll
+
+24) What are the differences between static, public and void in C#?
+
+Static classes/methods/variables are accessible throughout the application without creating instance. Compiler will store the method address as an entry point.
+Public methods or variables are accessible throughout the application.
+Void is used for the methods to indicate it will not return any value.
+
+
+
+25) What is the difference between “out” and “ref” parameters in C#?
+
+“out” parameter can be passed to a method and it need not be initialized where as “ref” parameter has to be initialized before it is used.
+
+26) Explain Jagged Arrays in C#?
+
+If the elements of an array is an array then it’s called as jagged array. The elements can be of different sizes and dimensions.
+
+27) Can we use “this” inside a static method in C#?
+
+No. We can’t use “this” in static method.
+
+28) What are value types in C#?
+
+Below are the list of value types in C# -
+
+decimal
+int
+byte
+enum
+double
+long
+float
+
+29) What are reference types in C#?
+
+Below are the list of reference types in C# -
+
+class
+string
+interface
+object
+
+30) Can we override private virtual method in C#?
+
+No. We can’t override private virtual methods as it is not accessible outside the class.

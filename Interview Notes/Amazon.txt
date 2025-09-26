@@ -1,0 +1,197 @@
+Interview Experience
+Round 2: This was more concentrated on my previous projects,
+
+Give me the situations where you failed and pushed back.
+Tell me the hardest task done by you till now and how you solved it.
+If you are assigned two interns and there are two other interns who are assigned to someone else outside the team. But these two are also in your team, and they notice other two interns asking questions to you and so they start asking thing to you, due to this you are lacking in your productive time, how will you react?
+Tell me the thing that hurt you the most in your career and how did you react to it?
+Some leadership-related questions were also there.
+And some more questions on OS and CN.
+
+Round 3: This was straight coding round.
+
+The zigzag traversal of a Binary tree: Gave a solution with BFS using Queue and Stack but he wanted me to optimize it, so used two stacks and that worked. ( no miss in edge cases)
+How to delete a node from Singly linked list when you are given only the node (head is not provided): simply copy the next nodes data to current and delete the next. Coded as well ( no miss of edge cases)
+Round 4: Here we started with the discussions of my previous projects and some system designs and how I solved the problems that occurred in the way of my projects.
+
+Only one question was asked to create an HTML validator, I couldn’t find it anywhere on internet, but I understood this is a variation of balanced parentheses problem and gave a solution with stack and coded as well (here I missed 2 edge cases).
+
+zigzag traversal of a Binary tree:
+
+the STAR format is a must. don't think this is a suggestion. 
+Be concise, don't ramble. 
+Give the Situation (context), 
+the Task at hand, 
+the Action you took and 
+the Results of the action.
+
+Leadership Principles:
+
+1. Customer Obsession (The #1 most important person in Amazon is the customer)
+
+2. Ownership (Take ownership of situations and be responsible & accountable)
+
+3. Invent & Simplify (Lead teams that innovate and invent)
+
+4. Are Right, A lot (Leaders have strong judgment)
+
+5. Learn & Be Curious (Improve, develop and ask questions!)
+
+6. Hire & Develop the Best (Leaders move forward and improve with every person they hire)
+
+7. Insist on The Highest Standards (Demonstrate you can work to high standards, always!)
+
+8. Think Big (Have huge ambitions and go out of your way for the customer)
+
+9. Bias for Action (Get things done!)
+
+10. Frugality (Achieve more with less)
+
+11. Earn Trust (Treat people with respect)
+
+12. Dive Deep (Look into things deeply and analyze data/information)
+
+13. Have Backbone; Disagree & Commit (Challenge decisions and then commit)
+
+Tell me about a time you made a mistake?
+
+Tell me about a situation where you had a conflict with someone on your team. 
+What was it about? What did you do? How did they react? What was the outcome?
+
+Give an example of when you saw a peer struggling and decided to step in and help. 
+What was the situation and what actions did you take? What was the outcome?
+
+
+Tell me about a time you committed a mistake?
+1.
+-Situation:  Physician Report, join issue, missed to join a table which resulted in data to show up from facility 
+-Task: Was to fix the join
+-Action:
+
+Tell me about a time when you earned your teammate's trust?
+
+Tell me about a time when you couldn't meet your deadline?
+
+Tell me about a time when your teammate didn't agree with you? What did you do?
+
+
+Tell me about a time when you invented something?
+
+
+Tell me about a time when you took important decision without any data?
+
+
+Tell me about a time when you helped one of your teammates?
+name time when you went out of your way to help someone?
+Time when you helped someone in their work.
+Tell me about a time you had to help a team member struggling with a task.
+
+1. Helping teammant to implement pagination using dataTable library
+-S Team was implementing a pagination for a table. As a new grad, he was doing his own implementation.
+-T Go through data table pagination component and implement it
+-A I had to implement that functionality
+-R PM's and BA liked the feature
+
+2. help the dev in the html layout to make the screen work for mobile solution.
+
+3. help to make the menu and dropdown work on iOS devices. Bootstrap library
+
+Have you ever been in a situation where you had to make a choice among a few options, 
+but did not have a lot of time to explore each option
+
+
+Have you ever failed at something? What did you learn from it?
+
+
+
+Time when you came up with novel solution.
+
+
+Received negative feedback from manager and how you responded.
+
+
+Time when you went above and beyond your job responsibilities.
+- making the provider signature screen with table work for mobile devices
+
+Time when you did not have enough data and had to use judgement to make decision.
+
+Time when you helped someone grow in career and it benefited them.
+
+Time when you helped someone grow but did not benefit them.
+
+Time when you were 75% through a project and realized you had the wrong goal.
+
+Time when your team members were not supporting something but you pushed and went for a more optimal solution.
+
+Time when you pushed back a decision from your management for better long term benefits.
+
+
+Time when you failed to meet your commitment
+
+
+Tell me about yourself. Tell me about a project you're working on.
+
+
+Time when you were working on a project on a time constraint
+
+Time when you didn't meet a deadline
+
+
+Time when you needed help from somebody
+
+
+Tell me about yourself.
+Tell me about a time you faced an obstacle and how you overcame it.
+
+Tell me about one of your projects?
+Tell me about one of your projects so the same as the first guy.
+Tell me a time you took some on some risk
+
+Have you ever gone out of your way to help a peer? (ownership)
+Have you ever had to make a tough decision without consulting anybody? (bias for action)
+asked me about my past projects that I've worked on and gave me detailed explanation about the Internship.
+
+Tell me about a time when you learned new technologies
+
+
+Tell me about a time when you took a decision on your own without the manager's prior approval
+Tell me about a time you had multiple solutions and you had to select an optimal one
+
+Tell me about a time when you innovated and exceeded the expectation
+
+Tell me about a time where you had to make a decision based on limited information and how it impacted the outcome.
+
+Tell me about a time where you had limited time and how it impacted
+
+Tell me about a time where you did not know something and how you tackled it(Something related to it)
+
+first one was about handling a tight deadline, second is setbacks on projects?
+
+Handling a tight deadline
+How would you help a new employee who is facing technical difficulties?
+
+disagree and commit and ownership LPs.
+
+Tell me about your yourself (the general icebreaker).
+Tell me about tim when you faced a difficult challenge.
+Tell me about a time when you needed help from someone during a project.
+
+Tell me about a time when you thought of an unpopular idea.
+Tell me about a time when you had to decide upon something without consulting your superior.
+Tell me about a time when you had to face tight time constraints during a project.
+
+Tell me about yourself.
+Tell me about a time when you did not meet your deadlines for a project.
+Tell me about a time when you had conflicting ideas with your teammates and how did you resolve them?
+
+a project you're proud of
+a time when you faced a setback initially but still achieved the goal.
+a time when you had to cut corners to meet a deadline
+
+"Tell me about a time when you felt under pressure that you wouldn't be able to get something done or had to take a pivot at the last minute"
+
+
+
+
+
+Given a Binary Search Tree, write a program to print the kth smallest element without using any static/global variable. You canÃ¢â‚¬â„¢t pass the value k to any function also.What are the 4 basics of OOP?Define Data Abstraction. What is its importance?Given an array of size n. It contains numbers in the range 1 to n. Each number is present at least once except for 2 numbers. Find the missing numbers.Given an array of size n. It contains numbers in the range 1 to n. Find the numbers which aren’t present.Given a string,find the first un-repeated character in it? Give some test casesYou are given a dictionary of all valid words. You have the following 3 operations permitted on a word: delete a character, insert a character, replace a character. Now given two words - word1 and word2 - find the minimum number of steps required to convert word1 to word2. (one operation counts as 1 step.)Given a cube of size n*n*n (i.e made up of n^3 smaller cubes), find the number of smaller cubes on the surface. Extend this to k-dimension.What is a C array and illustrate the how is it different from a list.What is the time and space complexities of merge sort and when is it preferred over quick sort?Write a function which takes as parameters one regular expression(only ? and * are the special characters) and a string and returns whether the string matched the regular expression.Given n red balls and m blue balls and some containers, how would you distribute those balls among the containers such that the probability of picking a red ball is maximized, assuming that the user randomly chooses a container and then randomly picks a ball from that.Find the second largest element in an array with minimum no of comparisons and give the minimum no of comparisons needed on an array of size N to do the same.Given an array of size n, containing every element from 1 to n+1, except one. Find the missing element.How do you convert a decimal number to its hexa-decimal equivalent.Give a C code to do the sameExplain polymorphism. Provide an example.Given an array all of whose elements are positive numbers, find the maximum sum of a subsequence with the constraint that no 2 numbers in the sequence should be adjacent in the array. So 3 2 7 10 should return 13 (sum of 3 and 10) or 3 2 5 10 7 should return 15 (sum of 3, 5 and 7)You are given some denominations of coins in an array (int denom[])and infinite supply of all of them. Given an amount (int amount), find the minimum number of coins required to get the exact amount. What is the method called?Given an array of size n. It contains numbers in the range 1 to n. Each number is present at least once except for 1 number. Find the missing number.

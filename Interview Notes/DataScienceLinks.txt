@@ -1,0 +1,41 @@
+1. Machine Learning
+The HitchHiker's Guide to Machine Learning in Python
+https://lnkd.in/gZtDJrQ
+Machine Learning Zero-to-Hero: How to Compete in Kaggle
+https://lnkd.in/gdnks6w
+Dimensionality Reduction Techniques
+https://lnkd.in/gvWi_T3
+Top 10 Machine Learning Algorithms You Should Know
+https://lnkd.in/g_Hp4xe
+Time Series Analysis in Python
+https://lnkd.in/g9W4X2r
+
+2. Programming
+Learn Python Programming - The Definitive Guide
+https://lnkd.in/gH3fbTU
+Learning Python From Zero-to-Hero
+https://lnkd.in/geSJCWj
+Codeacademy Learn Python
+https://lnkd.in/gGQ7cuv
+
+3. Visualization 
+Five Quick&Easy Visaulizations in Python
+https://lnkd.in/giYnSve
+Python Graph Gallery 
+https://lnkd.in/gdGe-ef
+
+4. NLP & Chatbots
+How to Solve 90% of NLP Problems
+https://lnkd.in/gh8bKe4
+Text Classification in Python with NLTK
+https://lnkd.in/gPTrAR4
+Contextual Chat Bots w/ TensorFlow
+https://lnkd.in/gkhzMAa
+
+5. Webscraping
+Webscraping in Python with BeautifulSoup
+https://lnkd.in/g96Mxaw
+Using Scrapy to Build Your Own Dataset
+https://lnkd.in/gvFw7zP
+30 Minute Python Web Scraper
+https://lnkd.in/gR8MRkU

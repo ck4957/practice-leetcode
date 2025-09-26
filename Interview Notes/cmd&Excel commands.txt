@@ -1,0 +1,1 @@
+﻿List all the portsnetstat -a -o -nKill the processtaskkill /F /PID 28344Extract Text After Space In String=RIGHT(C2,LEN(C2)-FIND(" ",C2))Extract text before or after space with formula in ExcelSelect a blank cell, and type this formula =LEFT(A1,(FIND(" ",A1,1)-1)) (A1 is the first cell of the list you want to extract text) , and press Enter button.

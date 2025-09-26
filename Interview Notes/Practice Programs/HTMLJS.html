@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+function Person(first, last, age, eye) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eye;
+}
+
+Person.prototype.name = function() {
+    return this.firstName + " " + this.lastName
+};
+
+var myFather = new Person("John", "Doe", 50, "blue");
+document.getElementById("demo").innerHTML =
+"My father is " + myFather.name();
+
+</script>
+<script type="text/javascript">
+    function Person1(fname, lname){
+        this.fname = fname;
+		      this.lname = lname;
+		};
+
+Person1.prototype.name = function(){
+		return this.fname + "-"+ this.lname;
+	};
+var father = new Person1("Chirag","Kular");
+
+    document.write(father.name()+"<br/>");
+
+    document.write("0==false :"+(0==false)+"<br/>")
+    document.write("0===false :"+(0===false)+"<br/>")
+
+    var car = ["Merc","Ferrari","BMW"];
+
+    var numbers = new Array(1,2,3,4,5);
+    document.write("\ Sorted car.sort(): \a "+car.sort());
+    document.write("\ new Array(1,2,3,4,5):"+numbers);
+
+</script>
+
+
+</body>
+</html>

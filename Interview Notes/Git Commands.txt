@@ -1,0 +1,14 @@
+﻿Git Commands
+
+git add -A. This should add everything including those files that are untracked.
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin <project url>
+git push -u origin masterForceful Push
+git push -f origin master
+
+To Remove Files From github account
+git rm --cached file.txt from ur directory as well
+git rm file.txt
+git status

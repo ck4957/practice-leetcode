@@ -1,0 +1,243 @@
+
+
+
+
+They asked me to explain the projects that was listed on my resume 
+
+Tell me about a time when you handled a difficult coworker, how do you work by your companies mantra etc.
+
+
+
+What is one area of expertise that you would bring to this position that we may not be able to see on your resume?
+- Angular Shared components module with Front-end expertise
+
+At Medtronic, we value professional development and education. What is the last learning opportunity you have been able to participate in?
+- Meetups, using AWS Services - Comprehend Medical
+
+
+
+-- Reports
+-- Angular Library
+
+—————————————————————————————————————————————————————————————————————
+Tell me about yourself:
+
+
+--name
+--education
+--work experience
+--strengths and weakness
+
+And 
+I also worked in India for couple of years with an IT company 
+as Software Engineer
+
+
+————————————————————————————————————————————————————————————————————————
+
+What you like to do in free time?
+
+Like watching sitcoms 
+Reading (nothing in particular
+and work on personal projects (mostly about learning latest 
+technology and enhancements)
+
+Technology has risen exponentially is last 4-5 years
+————————————————————————————————————————————————————————————————————————
+Does company values align with your values?
+
+Examples of Personal Values:
+Love - that can include patience, kindness, forgiveness, trust, selflessness, compassion and protection.
+Integrity - which can incorporate honesty, truthfulness, responsibility, reliability, dependability, consistency, decency, justice, sincerity and commitment
+
+————————————————————————————————————————————————————————————————————————
+Tell us something unique:
+
+I am happy when I reduce the number of lines of code
+
+————————————————————————————————————————————————————————————————————————
+
+What have you done or Describe some unique projects you are proud of?
+
+Alexa in Mixed Reality is my capstone project where 
+I combined three different technologies: HoloLens, Alexa(AVS) & IBM Watson
+I created a hologram of Alexa in Unity3D and implemented Alexa Voice Service using C# which involved REST API calls and doing POST request which include MP3 raw data in it.
+Also created Alexa Skill where data was read from News API and analyzed it sentiment using IBM Watson Tone Analyzer. Skill was written in C#.
+Altogether, this is experienced inside Microsoft HoloLens
+
+————————————————————————————————————————————————————————————————————————
+Why did you apply for this job?
+My experience and technology interest aligned with the job description
+
+————————————————————————————————————————————————————————————————————————
+Why you like to work here?
+
+I like the fact that you’re also involved in healthcare industry____ [a particular trend or product or service line], because that seems to be the way this industry is heading.
+You’re #1 in the business, and I love the challenge and incentive of finding new ways to build on past successes. —OR— You’re not #1 yet, which provides an exciting challenge and incentive to work harder and be more innovative to surpass the competition.
+
+
+Solve challenging problems, work on innovation and new technologies
+
+Because I would like to build products that will eventually help people to solve their day-to-day problems.
+————————————————————————————————————————————————————————————————————————
+
+What is your proudest moment?
+- Receiving prize for best poster presentation for my master capstone project and also getting featured in RIT's student spotlight for my capstone work
+
+- During first internship within 3 weeks of work, I developed a working prototype of Alexa Skill and they instantly planned to demonstrate it at their annual conference and I was asked to join them at the conference and act as behind the scene
+
+————————————————————————————————————————————————————————————————————————
+Looking for in next job?
+* I’m looking for a new challenge that can help me broaden my experience. 
+I believe this change of industry will do just that. 
+With my skill set and experience, this would give me an opportunity to build 
+ new working relationships and learn new things.”
+
+* “I’m looking for a role that will allow me to learn from the 
+ground up and build a career in this industry. But I do understand that in order to do that, I have to get the basics right and learn more about the organization.”
+
+————————————————————————————————————————————————————————————————————————
+-- Strengths
+* Efficiency
+* Innovation
+* Logical thinking
+* Open minded
+* Solution oriented
+————————————————————————————————————————————————————————————————————————
+—-- Weakness
+* Creative writing
+* Judgement about people
+* Statistics
+————————————————————————————————————————————————————————————————————————
+--- Why are you here today?
+————————————————————————————————————————————————————————————————————————
+--- Why should i hire you?
+
+I am confident that my technical skills will come in handy since you mentioned that you need a/ position requires 
+experienced person in C# .net, Javascript,
+
+
+I have a unique combination of ____ and ____, which means I’ll be able to ____.
+I excel in the kind of ____ working environment you’ve built here.
+I’m known among my coworkers as a great ____.
+_____ has always come easily to me / I’m particularly good at ____.
+I can see myself continually growing and developing my skills and knowledge to become even more valuable to the company in the coming years.
+This is my dream job. Someone else might have better credentials, but within a few months, I’ll have those same credentials, plus the passion those others lack.
+————————————————————————————————————————————————————————————————————————
+-- Conflicts with coworker/teammate and how you resolved it
+
+I evaluated the Pros and Cons of both the solutions
+
+————————————————————————————————————————————————————————————————————————
+-- How well you have worked in a team.
+
+————————————————————————————————————————————————————————————————————————
+-- Tell me the time you made mistake and how did you rectify it -
+
+————————————————————————————————————————————————————————————————————————
+-- Explain why your background and experience would be a good fit for the job?
+I’ve had a strong interest in this field for a long time. I’ve done a lot of research and learned as much as I can about it, and I’m eager to start contributing. I think my ____ skills could be particularly valuable to your team.
+
+After studying CS, I knew I wanted to go into the _s/w egg field.
+
+
+
+RESUME DETAILS
+
+-----------------IGATE-------------------------
+I have approximately 2 yrs of work ex as Oracle Apps Functional Consultant.
+I was part of a PMO team in IGATE which was fully dedicated to GE businesses and 
+doing implementation for various verticals of GE
+
+I completed my engineering in IT and was campus recruited by IGATE in Nov 2013
+//For three months, we are trained in .NET technology.
+Thereafter, we were brought in PMO team dedicated to GE businesses and 
+was working on SSS.(Shared Sourcing Services)
+
+For a month, we were trained in Oracle Apps(ERP) by the PMO team itself.
+Then i was assigned on projectss for BLE(Business Legal Entity) Addition .
+I did around 5 projects related to BLE Addition.
+First two projects were for GE Global Ops GGO
+For regions North America like Mexico, and US
+Then next three were for GE Capital.
+I worked with Operations Leader and controllers of GE Capital like Alex Crubargh, Teresa Costa
+
+- Implementation and testing of Oracle Applications R12 Financial modules like General Ledger, Account Payables, Account Receivables, Purchase Orders, INVoice, Sub-Ledger Accounting
+- Developed test plans and conducted testing for quality assurance and used PL/SQL developer tools
+- Involved in end-to-end requirement analysis, GAP analysis, Design the ‘to be’ process, Process mapping, Data Conversion Management, Testing (unit/integration/system)
+
+Process of creating requisition, approval hierarchy, create a Purchase Order, Receive goods and create the invoice and generating journal entries
+
+Process Improvement with As-Is and To-Be Analysis. ... The As-Is diagram describes the present state of the organization's process, culture, and capabilities. The To-Be diagram describes the future state; in other words, how the organization's process, culture, and capabilities will appear in the future
+
+-----------------MATRIXCARE-------------------------
+I did my co-op with MatrixCare. The company is in Long Term Care Industry. 
+My projects were mostly based on Proof-of-Concepts.
+
+--Fall Coop
+1) Developing an admin-panel template for sales-manager to set-up goals and view with DataTables, SemanticUI, AngularJS & show performances using Google Charts and jQuery library like Radial Pie Charts
+2) Developed a custom Alexa Skill Kit using Flask-ASK framework to automate the data charting
+
+--Summer Internship
+
+1) Developed new features such as image upload & cropping functionality using jQuery, HTML5 and CSS
+2) Chatbot
+3)
+
+--Spring Coop
+
+1) Fall risk assessment from clinical notes using machine learning algorithm (Logistic Regression) leveraging Azure ML Studio
+
+Logistic Regression 
+In linear regression, the outcome (dependent variable) is continuous. It can have any one of an infinite number of possible values. In logistic regression, the outcome (dependent variable) has only a limited number of possible values. Logistic regression is used when the response variable is categorical in nature
+
+2) Build new functionality in existing Form Builder and store data using Entity Framework and LINQ ( Language Integrated Query - LINQ offers a compact, expressive, and intelligible syntax for manipulating data. )
+
+Entity Framework is an open source object-relational mapping framework for ADO.NET. It was a part of .NET Framework, but since Entity framework version 6 it is separated from .NET framework
+
+3) Develop and execute user stories adhering to the acceptance criteria as written and committed to
+4) Created ASP.NET web forms containing C# code for business and data access logics. Used Gitlab for version control
+
+
+-----------------PROJECTS-------------------------
+--Alexa in MR
+
+
+MVC
+Model:
+
+The Model represents a collection of classes that explains the business logic i.e. business model and the data model (data access operations). It also defines the business rules for data means as how the data can be altered and manipulated.
+
+View:
+
+The View represents the user interface components such as CSS, jQuery, HTML, etc. View displays the data that is received from the controller as the outcome. This also changes the model(s) into the user interface.
+
+Controller:
+
+The responsibility of the Controller is to process incoming requests. It gets the input from users via the View, then processes the user's data through the Model, passing back the results to View. It normally acts as a mediator between the View and the Model.
+
+
+-----------------------------------------------------------------
+
+
+MVVM Design Pattern: MVVM pattern supports two-way data binding between View and ViewModel. This allows automatic propagation of changes, inside the state of ViewModel to the View. Generally, the ViewModel utilizes the observer pattern to inform changes in the ViewModel to the Model.
+
+
+
+Model:
+
+The Model represents a collection of classes that explains the business model and the data model. It also defines the business rules for data means as how the data can be altered and manipulated.
+
+View:
+
+The View represents the user interface components such as CSS, jQuery, HTML, etc. View displays the data that is received from the controller as the outcome. This also changes the model(s) into the user interface.
+
+ViewModel:
+
+The View Model is responsible for displaying methods, commands, and other functions that assist in maintaining the state of the View, manipulating the Model as the result of actions on the View, and triggering the events in the View itself.
+
+
+
+
+
+

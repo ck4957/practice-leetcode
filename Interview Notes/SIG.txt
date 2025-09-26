@@ -1,0 +1,1025 @@
+
+How does your team affect overall M&T business ?
+What's the role & responsibility of the Digital team ?
+
+What's the team day to day activities look like ?
+What's release cycle quarterly, monthly ?
+On Call system ?
+What's the team size ?
+- 3 engineers. TDP, 5 developers, 
+- Gitlab
+- ADO
+- Code reviews in gitlab	
+Do you guys work from office or home ?
+
+Demonstrate through examples
+
+
+Hiring Manager
+Agile, 
+Same Floor
+4 yrs 
+3 days + 
+Less 
+
+
+I will be meeting 
+Buffalo Startup Week Events: Friday 5 PM EST
+
+
+
+
+
+C# - OOP langauge
+.Net Framework - Framework on which different programming languages run
+	- Windows machine
+	- Not open source
+	- Only Visual Studio
+	Components:
+		- CLR (Common Language Runtime)
+		manages execution of program written in any language that uses .Net framework
+		Operations like memory mgmt, security checks
+	- CTS - Common Type Systems
+	- CLS - Common Language Specifications
+
+.Net Core - Free and Open source framework developed by microsoft.
+	- Cross Platform 
+	- Open Source
+	- Multiple IDE
+	File Structure
+	Program.cs - Entry point of app and register Startup.cs
+	Startup.cs - configure services and request pipeline for app
+	appSettings.json - DB Config settings
+	wwwroot: static files - images
+
+ASP.NET
+	- popular web-development framework for building web apps on the .NET platform.
+	- ASP.NET Core is an open-source version of ASP.NET, that runs on macOS, Linux, and Windows
+
+Azure Service Bus Queues
+	- FIFO Ordering guarantee
+	- Delivered at least once (using PeekLock receive mode)
+	- 
+		
+	
+
+OOPS
+Classes - Blueprint, real world entity
+Object - instance of an object
+Inheritance - Code Resuability
+	Types:
+		- Single Inheritence
+			Base/Super/Parent:
+				class Animal
+			Derived
+				class Dog: Animal
+		- Multiple Inheritence
+			Only achieve through multiple inheritance
+			class ChildClass: BaseClass1, Interface1, Interface2
+		- MultiLevel Inheritance
+			ChildClass: BaseClass 
+			SecondChildClass: ChildClass
+		- Hierarchical Inheritance
+			BaseClass
+			ChildClass: BaseClass
+			SecondChildClass: BaseClass
+	Prevent Inheritance
+		use sealed keyword
+		sealer BaseClass -> This cannot used for inheritance
+		
+Abstraction - 
+	design level process and used to reduce the complexity at the designing stage of project
+	means displaying only essential information and hiding the details.
+	method of hiding the unwanted information
+	example: Man driving a car, Making coffee with a coffee machine
+	
+Polyformism - Flexibility, Ability to take multiple forms	- variable, object, function
+
+	- Compile Time
+		- Overloading
+			Method overloading
+			- methods with same name in same class different number or type of params
+		- .net compiler knows that these two methods are different
+	- Runtime 
+		- Overriding
+			- uses virtual keyword for base class
+			- uses override keyword for derived class
+			Example:
+			class BaseClass 
+				- virtual void greetings()
+			ChildClass: BaseClass
+				- override void greetings()
+			Method overriding
+			 - It requires inheritance
+			- method in derived class with same name and signature as method in base class.
+		- Object references not set to an instance of an object. Compilers are not able to catch them before running. Runtime errors
+Encapsulation 
+	- implementation level process 
+	- Principle of data hiding helps to build secure programs
+	- method to hide the data in a single entity or unit along with a method to protect information from outside
+	Example: Rectangle: getArea
+Abstract vs Interface
+- Abstract
+	- Contains both declaration & definition of methods
+		abstract void Engine();
+		abstract void Dashboard() { return "Dashboard"};
+	- contains fields, methods, constant, constructor, static methods
+	- keyword: abstract
+	- doesn't support multiple inheritance
+	- used when methods are concrete/defined and implemented in SAME way
+	abstract class USTaXSystem
+		- calculateTax is different for individual vs companies
+		- currency is constant
+	No object creation - only used for inheritance
+
+- Inheritance
+	- Only method declaration
+		void Engine();
+		void Dashboard();
+	- contains only undefined methods
+	- keywords: inheritance
+	- support multiple inheritance
+	- flexibility to modify implementation at later stage
+	- used when you know that method has to be there but implemented in a different way.
+	interface IWorldTaxSystem
+		- calculateTax
+		- TaxCurrency
+		Each country has tax system but implemented in different way
+	- No objects creation, no constructor
+
+out, ref keywords
+	- used for pass by references
+	- out doesn't require initialize
+		- must be initialized before returning
+	- ref requires initialize ref. 
+		- not required to be initialized before returning
+	- used when we want to return more than one values from a method.	
+
+Exception Handling
+	- To Manage Errors
+	
+	With multiple catch blocks, only one is thrown
+	We can use Try w/o catch but then finally is required.
+	Finally block is used to dispose objects or close sql connection.
+	
+	throw vs throw ex
+	- throw preserve the whole stack trace
+
+this keyword:
+	refers to the CURRENT instance of the class
+	constructor params 
+		this.id = id
+	
+using keywors:
+	implements IDisosable interface and implements Dispose method
+	ensure dispose is called even if an exception occurs
+	mostly for clossing SQL connections 
+
+IS and AS
+	- IS - does a boolean check for types
+		particular object is string, int, class
+	- AS - used for type conversion
+		converting object to int, string 
+	
+Boxing - converting from value type to reference
+	int num = 23;
+	Object obj = num;
+Unboxing - converting from reference to value. Explicity conversion
+	int i = (int)Obj 
+
+String vs StringBuilder
+	Strings are immuatable in C#
+	can't be modified once it is created
+	String s1 = s1 + s2; -> Creates a new string in memory
+	- StringBuilder
+		- Better for performance
+		- SB is mutable in C#
+		s1.append(s2). -> Occupier same memery in process
+
+Nullable Types
+	Variables types do not hold null values.
+	In order for them to assign null, will have to declare them as nullable type
+	int j = null // Compile time errors
+	Nullable<int> j = null; //valid
+	int? j = null // valid
+
+Garbage Collector
+	- Manages allocation / release of memory
+	- can be forced to run (but not recommended)
+	- gc.collect()
+	instead use Dispose method
+
+Mutithreading
+	- process of multiple threads work simultaneously
+	- way of multitasking
+	- for creating multi-thread app in C#
+		use system.threading
+
+Reflection
+	- ability to code to access the metadata of the assembly during the runtime
+
+Serialization
+	- process of converting object to its BINARY FORMAT (BYTES)
+	- Object Data from Web API to frontend
+		- object is converted to bytes (like JSON)
+		can be easily stored on disk
+		
+MVC 
+- Model -> respresents the data
+- View => displays the data
+- Controller -> acts as an interface b/w model & View components to process all the business logic and then render the final output to view
+
+	1. User interacts w/ View
+	2. View alerts controller of a particular event
+	3. Controller updates the model
+	4. Model alerts view that it has changed
+	5. View grabs model data & updates itself
+	
+											Request Data
+	View   <--Sends Data---  Controller  --------->		Model
+							 Controller  <---------
+											Response Data
+-Return Types of  Controller Action Method
+ - ViewResult: return webpage from an action method
+ - PartialViewResult:
+- ContentREsult
+- JsonResult
+- JavascriptResult
+- FileResult
+- EmptyResult
+
+Authentication
+- Who are you ?
+
+Authorization
+- Can you do that ?
+
+Delegate:
+	- extensively used by framework developers
+	- delegate concept can be achieved by Lambda expressions
+	- Invoking a method using delegate. Is faster compared to calling a method using object.
+	- is also a user defined type.
+	- type safer function pointer
+	- Signature matches with signature of the function.
+
+	Types: Single and MultiCast
+	Single Cast delegate
+	
+	class Pragim {
+	public delegrate void HelloFnDelegate(string message);
+	
+	void main() {
+		HelloFnDelegate del = new HelloFnDelegate(Pragim.Hello);
+		del("Hello for Delegrate");
+	}
+	void Hello(string strMessage)
+		print "Hello" + message;
+	}
+	Multicast 
+
+Filters and types in MVC
+	- Authorization Filters
+		Authorize, RequireHttps
+		- Role Checking
+	- Action Filters
+		- custom logic executed bore and after an action method
+	- Result Filters
+		- change result before returning the view
+	- Exception Filter
+MVC over Web Forms?
+Web Forms
+	-UI Tightly coupled with logic
+	aspx to .aspx.cs
+MVC 
+	Loosely coupled
+	Seperation of concerns
+	- UI, Business logic, Model data
+	- Multiple view supported
+	View can interacts w/ multiple controllers
+	- Change UI accomodation w/ business rules.
+	- Testability - TDD
+	- ASP.NET MVC is lightweight than web forms
+
+Access Modifiers
+	
+
+
+Singleton Design Pattern
+	
+	public class Example
+		static Example _instance;
+		
+		static Example Instance {
+			get 
+			{ 
+				if (_instance == null) 
+					_instance = new Example();
+				return _instance;
+			}
+		
+		}
+		
+
+
+SOLID Priniciples
+- S : Single Responsibility Principle
+		Function/Method should one thing
+		Example Logger
+- O : Open / Closed Principle 
+		Open enough to be extensible
+			- Extension Methods
+		Closed
+			- Closed for modification w/o modifying its source
+- L : Liskov Substitution Principle (LSP)
+		LSP guides how to use inheritance in object-oriented programming. 
+		It is about subtyping, and how to correctly derive a type from a base type.
+		A derived class must be correctly substitutable for its base class. 
+		When you derived a class from a base class then the derived class should correctly implement all the methods of the base class. 
+		It should not remove some methods by throwing NotImplementedException.
+		- Violating LSP
+			- Null Check or Type Check
+		
+- I: Interface Segregation Principle
+		Clients should not be forced to depend on methods they do not use.
+		
+		Break down large interface into smaller interfaces.
+		Dont have NotImplementedException implementation
+		
+- D: Dependency Inversion Principle
+		High-level modules should not depend on low-level modules. Both should depend on abstraction
+		Example:
+		a class is depends on another class if it creates an object of another class. 
+		You may require to add the reference of the namespace to compile or run the code.
+		public class Student
+			public int StudentId { get; set; }
+			//tight coupling
+			private StudentRepository _stdRepo = new StudentRepository();
+
+The 23 Gang of Four (GoF) patterns are generally
+ three groups: Creational, Structural, and Behavioral. 
+
+Inheritence Principle
+- IS-A relationship
+	An eagle IS-A bird
+
+new features of .NET4.0 compared to the older versions. 
+why c# class does not support multiple inheritance
+What is the concept behind polymorphism?
+
+When would you want to use a condition variable
+
+Requirements:
+
+C#, ASP.NET, JavaScript
+Web accessibility (WCAG) and frameworks, 
+ideally vanilla JavaScript, jQuery, 
+AngularJS >= 2, React, 
+Bootstrap Foundation, NPM, Gulp, vanilla CSS, SASS/LESS, responsive CSS
+
+MSSQL and non-relational databases
+
+------------------------------------------------------------------------------------------
+Consider reviewing common algorithms such as 
+traversals, divide and conquer, breadth-first search vs. depth-first search and understand
+the tradeoffs for each. Knowing the
+runtimes, theoretical limitations,
+and basic implementation strategies
+of different classes of algorithms is
+more important than memorizing the
+specific details of any given algorithm
+
+CodeSignal: 
+https://github.com/neemiassgc/CodeSignal-Solutions/tree/master/InterviewPratice/Java
+
+Your interview day may consist of the following topics through an online assessment tool CodeSignal:
+	- Java Questions
+	- Personal Project
+	- Design Experience 
+
+- breadth-first search vs. depth-first
+
+- Data parsing/processing
+- System design: build a grocery store checkout system
+- How would you design a grocery store
+	https://www.youtube.com/watch?v=6tBmMmVE74U
+	
+	What kind of POS store it ?
+	Are there multiple users of this system ?
+	Single Location or Multiple ?
+	Do we store customer information ?
+	Do we keep management of inventory or it's unlimited supply ?
+	
+	DB
+	
+	orders (transactionId, customerId, purchaseDate)
+	orderDetails (transactionID, ProductID, Qty, PricePerUnit, totalPrice,
+	customers (customerID, phoneNo, CCd, location
+	Product (id, name, department, category,  price, unit, availability (int))
+	Transactions/Sales (id, ProductName, Price, Qty, DatePurchased)
+	
+	
+	
+
+Threads:
+-------------------------------------------------------------------------------
+Multithreading is a Java feature that allows concurrent execution of two or more parts of a program for maximum utilization of CPU. (Each chrome tab) 
+Each part of such program is called a thread.
+
+
+1. Extending the Thread class
+	- overrides the run() method
+	- A thread begins its life inside run() method. 
+	- We create an object of our new class and call start() method to start the execution of a thread. 
+	- our class cannot extend any other class because Java doesn’t support multiple inheritance.
+	- Extending Thread class provides some inbuilt methods like yield(), interrupt() etc. that are not available in Runnable interface.
+2. Implementing Runnable interface
+	- overrides the run() method
+	- Then we instantiate a Thread object and call start() method on this object. 
+	- our class can still extend other base classes.
+	- Using runnable will give you an object that can be shared amongst multiple threads. 
+
+	put the code in synchronized block
+	synchronized() {
+		..code here
+	}
+
+- Synchronization in Java is the process that allows only one thread at a particular time to complete a given task entirely. 
+	By default, the JVM gives control to all the threads present in the system to access the shared resource, 
+	due to which the system approaches race condition
+
+- Thread synchronization is the concurrent execution of two or more threads that share critical resources. 
+	Threads should be synchronized to avoid critical resource use conflicts. Otherwise, conflicts may arise when parallel-running threads attempt to modify a common variable at the same time.
+	
+	put the code in synchronized block
+	void run() {
+		synchronized() {
+		..code here
+		}
+	}
+	put the code in synchronized method
+	snychronized void method name(Params) {
+		// Access shared variables
+	}
+
+Binary Search:
+-------------------------------------------------------------------------------
+
+int mid = low + ((high-low)/2)
+
+Find first and last element in the sorted array
+
+	int findBound(int[] nums, int target) {
+		
+		int start = 0;
+		int end = nums.length - 1;
+		
+		while (start <= end) {
+			int mid = (start + end) / 2;  // 
+			if (nums[mid] == target) {
+				return mid;
+			} else if (nums[mid] < target) {
+				start = mid + 1;
+			} else if (nums[mid] > target) {
+				end = mid - 1;
+			}
+			
+		}
+		
+	
+	}
+
+
+
+Tree traversal:
+-------------------------------------------------------------------------------
+
+
+Linked List:
+-------------------------------------------------------------------------------
+
+
+Merge List:
+ ListNode mergeList(ListNode l1, ListNode l2) {
+
+        if (l1 == null) return l2;
+        if (l2 == null) return l1;
+
+        ListNode merge = new ListNode(1);
+        while (l1 != null && l2!= null) {
+            if(l1.val <= l2.val) {
+                merge.next = l1;
+                l1 = l1.next;
+            } else {
+                merge.next = l2;
+                l2 = l2.next;
+            }
+            merge = merge.next;
+        }
+        return merge;
+
+
+    }
+
+Graph Traversal:
+-------------------------------------------------------------------------------
+- 
+	boolean[] visited = new visited[numOfVertices]
+	Queue<Integer> queue = new LinkedList<>();
+	
+	queue.add(index)
+	visited[index] = true;
+	
+	while (!queue.isEmpty()) {
+		int vertex = queue.poll();
+		
+	}
+
+- numOfIslands(char[][] grid)
+	
+
+LinkedList:
+-------------------------------------------------------------------------------
+
+
+Scalable Systems:
+-----------------------------------------------------------------------------
+Horizontal Scaling
+	- Add CPU Cores and RAM, Memory
+Vertical Scaling
+	- Increasing number of nodes
+	- Additional Servers
+Load Balancer
+	- Distribute the load evenly
+Database Denormalization and NoSql
+	- Database Partitioning (Sharding) - Splitting data acrross multiple machines
+	- Vertical Partitioning: Split by feature
+	- Key Based Partitioning: 
+		mod(key, n)
+	- Directory Based 
+
+Caching:
+	- Redis
+Queues:
+	
+Write Heavy
+	- Use Queues
+Read Heavy
+	- Use Cache
+
+
+HashTable: 	
+-------------------------------------------------------------------------------
+- Explain how hash tables work
+	1. Hash tables are used to quickly store and retrieve data (or records).
+	2. Records are stored in buckets using hash keys
+	3. Hash keys are calculated by applying a hashing algorithm to a chosen value (the key value) contained within the record. This chosen value must be a common value to all the records.
+	4. Each bucket can have multiple records which are organized in a particular order.
+	
+- Why do we use Hashtable? and what is its time complexity?
+	Real life Scenarios:
+		- PhoneBook
+		- Disk-based data structures and database indexing
+		- For implementing Caches
+		- Dynamic programming languages like Python, Ruby, Javascript
+	Hash tables let us implement things like phone books or dictionaries; in them, 
+	we store the association between a value (like a dictionary definition of the word "lamp") and its key (the word "lamp" itself). 
+	We can use hash tables to store, retrieve, and delete data uniquely based on their unique key.
+
+	HashMap allows one null key and multiple null values whereas 
+	Hashtable doesn't allow any null key or value. 
+	HashMap is generally preferred over HashTable if thread synchronization is not needed.
+
+
+- Talk about the Binary Search Tree? What is its time complexity?
+	Binary search is faster than linear when the given array is already sorted. 
+	For a sorted array, binary search offers an average O(log n) meanwhile linear offers O(n)
+	The binary search algorithm works on the principle of divide and conquer
+	best applied to search a list when the elements are already in order or sorted.
+	Implementing a binary search tree is useful in any situation where the elements can be compared in a less than / greater than manner.
+	Requirements of BST:
+	1) The elements are in an array (or in any data structure that enables indexed access). 
+	2) The storage is sorted according to the compare function. Sorted and fast access to the elements
+	Benefits of binary trees
+		An ideal way to go with the hierarchical way of storing data.
+		Reflect structural relationships that exist in the given data set.
+		Make insertion and deletion faster than linked lists and arrays.
+		A flexible way of holding and moving data.
+		Are used to store as many nodes as possible.
+
+
+- Since in general the time complexity of Hashtable is O(1), why do we still use Binary Search Tree? Can you tell some occasions where we use BST in stead of Hashtable?
+	- Binary Search Trees are generally memory-efficient since they do not reserve more memory than they need to. 
+	On the other hand, 
+	Hash tables can be a bit more demanding if we don't know the exact number of elements we want to store
+
+- Data structures, time complexity, OOP, concurrency
+
+- What is garbage collection? How it is done in Java?
+	Garbage collection in Java is the automatic process for memory management. 
+	It is the way to remove/destroy unused objects. 
+	In C language allocation and deallocation of memory is the manual process. 
+	But in java, deallocating memory process is handled automatically by the garbage collector.
+	
+	As long as an object is being referenced, the JVM considers it alive. 
+	Once an object is no longer referenced and therefore is not reachable by the application code, the garbage collector removes it and reclaims the unused memory.
+	
+	You can use the Runtime. getRuntime(). gc() method
+	- This class allows the program to interface with the Java Virtual machine. The “gc()” method allows us to call the garbage collector method.
+
+- c# question and architecture questions
+- Stack implementation.
+
+- What's the difference between C and Java in terms of compiling?
+- Reverse an array, find all the perfect numbers.
+-------------------------------------------------------------------------------
+- difference between java and python,
+	Java is a statically typed and compiled language, and 
+	Python is a dynamically typed and interpreted language. 
+	This single difference makes Java faster at runtime and easier to debug, 
+	but Python is easier to use and easier to read
+
+- Difference between array and list. Ask something about hashmap and binary search tree. 
+- difference btw array and linked list and which one of these is more memory efficient way of storing data.
+	An array is a collection of elements of a similar data type. 
+	Linked List is an ordered collection of elements of the same type in which each element is connected to the next using pointers. 
+	Array elements can be accessed randomly using the array index. 
+	Random accessing is not possible in linked lists.
+	
+	Arrays uses less memory than linked list. 
+	Linked List uses more memory because it stores data as well as address of next node
+	
+	Array inefficient memory allocation/utilization. Slow insertion/deletion
+	Linkedlist efficient memory allocation/utilization. Fast insertion/deletion.
+
+- When will you use a interface over a abstract class or vice-versa.
+	Abstract classes should be used primarily for objects that are closely related, 
+	whereas interfaces are best suited for providing common functionality to unrelated classes. 
+	If you are designing small, concise bits of functionality, use interfaces. 
+	If you are designing large functional units, use an abstract class.
+	
+	You should use an interface if you want a contract on some behavior or functionality. 
+	You should not use an interface if you need to write the same code for the interface methods. 
+	In this case, you should use an abstract class, define the method once, and reuse it as needed
+	
+	 abstract classes can be used to consolidate and share functionality, 
+	 while interfaces can be used to specify what the common functionality that will be shared between different instances will be, without actually building that functionality for them. 
+	 Both can help you make your code smaller, just in different ways.
+	
+	Abstract Class: Source Order, Anticipated Order, MedRecOrder - 
+	
+
+- a algorithm question related to string matching which I solved through 256 ASCII character array leading to constant space complexity.
+
+
+Users
+
+Clients 
+
+Fourth Round: 
+1. How does your daily day look like at your work (time spent doing development and support work)?
+		50% development
+		20% meetings
+		30% support work
+2.Have you broken any piece of code which was working earlier and deployed to production. How did you resolve and what did you learn from it?
+	- Refactored Code to make a single Stored Proc
+	- Missed a join in the report proc
+		- Thoroughly test the output
+		- write unit test
+
+3.What is the exciting work/technology you want to pursue in the future.?
+	AWS Tech:
+		- Event Driven Architecture
+		- Pub/Sub
+		
+-------------------------------------------------------------------------------
+
+- Talk about one or two projects that you are proud of:
+	- 
+- How would you build out a web platform for internal use if I had a store like a Target or Walmart?
+	- 
+
+- Build a system for retrieving movies based on year and genre.
+- Some general object-oriented and polymorphism questions. Nothing too crazy
+
+- How does a dictionary work?
+	A Java dictionary is an abstract class that stores key-value pairs. Given a key, its corresponding value can be stored and retrieved as needed; thus, a dictionary is a list of key-value pairs. The Dictionary object classes are implemented in java. util .
+
+- Fill matrix rows/columns with zeroes if there are zero elements on those rows columns.
+	boolean[] eow = new boolean[matrix.length];
+	boolean[] cow = new boolean[matrix[0].length];
+	
+	for (int i =0; i < row.lenth; i++) {
+		for (int j =0; i< col.length; j++) {
+		if row col == 0
+			row = true;
+			col = true;
+	
+	for (int i=0; i < row.length; i++)
+		if (row)
+			nullifyRows(matrix, i)
+			
+	for (int i=0; i < col.length; i++)
+		if (col)
+			nullifyColss(matrix, i)
+	
+	void nullifyRows s(matrix, i) 
+		for int j = 0; j < matrix[0].length; j++
+			matrix[i][j] = 0;
+			
+
+
+----------------------------------------------------------------------------------------
+Java:
+private construction:
+	We can use this private constructor in the Singleton Design Pattern.
+
+final, finally, finalize
+	- final: control whether a variable, method or class is "exchange-able"
+	
+
+HashMap - O(1) - Ordering is arbitary
+TreeMap 
+	- O(log n) 
+	- Keys are in sorted order.
+	- Implemented by Red black tree
+	- O/p the people in alphabetical order by name
+LinkedHashMap	
+	- O(1)
+	- Keys are ordered by their insertion order.
+	- Implemented by doubply-linked buckets
+
+
+Can you describe a project you worked on that required you to use a new technology or programming language? How did you go about learning and implementing this technology?
+- React:
+	- Always create a hello world project
+	- Try to insert a simple rest api call
+
+How do you approach debugging a complex issue in code? Can you provide an example of a difficult bug you had to solve and how you approached it?
+	
+	Timezone issues:
+		- StringCalendar - it uses gregorian calendar
+		- Inside it was read server timezone;
+		
+	READ Level uncommited
+	Replicate the issue in the lower environment
+	Print statements. Using a print statement might be the simplest way to debug code.
+	Error handling. Another method of debugging your code is using error handling. ...
+	Commenting things out. ...
+	Debugging tools. ...
+	Tests. ...
+	
+
+Can you describe a time when you had to work with a team to deliver a project on a tight deadline? How did you contribute to the team and what was the outcome?
+	- Hold Order with Reports
+	- Created a sql function to 
+
+SIG is a highly collaborative and fast-paced environment. How do you approach working in a team setting and how do you handle working under pressure?
+	- I prioritize the task. Always least top 3 things to be done.
+
+SIG values continuous learning and development. How do you stay up to date with the latest technology and trends in the field of software engineering?
+	- PluralSight
+	- Follow Youtube Channels
+	- LinkedIn 
+
+Can you describe a time when you had to communicate technical information to a non-technical audience? How did you ensure that your message was clear and understood by all?
+	- 
+
+How do you prioritize tasks and manage your workload in a fast-paced environment? Can you provide an example of how you have successfully managed multiple projects simultaneously?
+	- 
+	- 	
+
+SIG's trading systems are mission-critical and require high availability. How do you approach ensuring the reliability and performance of the systems you work on?
+	- No bugs
+	- Health Check APIs are in place
+	- Test the system with High load of data
+	Redundancy systems: Such as contingencies for using backup servers
+	Fault tolerance: Such as error correction algorithms for incoming network data
+	Preventative maintenance: Such as cycling through hardware resources before failure through overuse
+	Human error prevention: Such as cleaning and validating human input into the system
+	Reliability optimization: Such as writing code optimized for quick and consistent loading
+
+Can you describe a time when you had to work with a difficult client or stakeholder? How did you handle the situation and what was the outcome?
+		
+		
+
+
+- Options
+- Network Latency
+- Server
+- More Comuting Power
+- Teams
+	- Networking
+	- PLatform
+	- Firewall
+- Backend
+
+
+
+- Developing Tools from Sratch
+	- MMA (Monitoring Management and Automation)
+	- Full Stack Team on .Net
+		- (60 application)
+		- DB - SQL Server
+		- All kind of database
+	- Monitoring Aspect
+		- Tools instead on lot
+		- Servers are healthy
+		- LightWeight 
+		- Everything used 
+		- Google Protobots
+		- Published Listeners
+		- Funneling to DB
+		- Mostly in C++
+		- Monitoring Test Suite using Python
+
+
+import java.io.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.*;
+import java.util.stream.*;
+
+class MovieCatalog {
+	/**
+	 * Collection holding movies parsed from the constructor
+	 * Note: You can change this to any data structure you wish
+	 */
+	private ArrayList<Movie> _movieCollection;
+
+	/**
+	 * Creates a new MovieCatalog instance
+	 * Note: This is a basic constructor for your movieCatalog class.
+	 *       You can choose to edit any part of this constructor.
+	 *       We do not care about performance to load the data file and only care about GetMovies performance.
+	 * @param movieFileName Path to movie csv file
+	 * @throws IOException Error while parsing movie csv
+	 */
+	MovieCatalog(String[] movieFileName) throws IOException {
+		_movieCollection = new ArrayList<>();
+		try (BufferedReader br = new BufferedReader(new FileReader(movieFileName)))
+		{
+			String line;
+			while ((line = br.readLine()) != null)
+			{
+				if (line.startsWith("#"))
+				{
+					continue;
+				}
+                
+                try {
+				String[] lineSplit = line.split(",");                
+                
+				List<String> genreSplit = Arrays.asList(lineSplit[3].split("\\|"));
+
+				_movieCollection.add(new Movie(
+						Integer.parseInt(lineSplit[0]),
+						lineSplit[1],
+						Integer.parseInt(lineSplit[2]),
+						genreSplit
+				));
+                    
+                } 
+                catch(Exception ex) {
+                    
+                }
+
+			}
+		}
+	}
+
+	/**
+	 * Returns list of movies in the specified genre released within the range of years provided.
+	 * Note: Your main goal is to make this function run faster.
+	 *       You can edit this function, any of the data structures
+	 *       or any of the classes to make this happen.
+	 * @param genre The genre of movies to include<
+	 * @param startYear The start of the release year search range. It is inclusive.
+	 * @param endYear The end of the release year search range. It is inclusive.
+	 * @return Non-ordered list of return data
+	 */
+	ArrayList<Movie> GetMovies(String genre, int startYear, int endYear) {
+		ArrayList<Movie> retVal = new ArrayList<>();
+		
+        Map<Integer, List<Movie>> moviesGroupByYear =  _movieCollection.stream()
+                                                        .collect(Collectors.groupingBy(movie -> movie.releaseYear));
+        // Movies with start Year
+        ArrayList<Movie> temp = new ArrayList<>();
+        if (startYear == endYear) {
+            temp.addAll(moviesGroupByYear.get(startYear));        
+        }
+        temp.addAll(moviesGroupByYear.get(endYear));
+
+        for (Movie m : temp)
+        {
+			if (m.genres.contains(genre))
+            {
+				retVal.add(m);
+			}
+		}
+        // No of years - n
+        // Map<String, List<Movie>>  
+        // O(1*m) -> 
+        
+        /*
+        for (Movie m : _movieCollection)
+        {
+			if (m.releaseYear >= startYear && m.releaseYear <= endYear && m.genres.contains(genre))
+            {
+				retVal.add(m);
+			}
+		} */
+
+		return retVal;
+	}
+}
+
+
+
+Public class GroceryStorePOS	{
+	private Set<Coupon> coupon = null; 
+	Map<Barcode, Item> items = new HashMap<>();
+	
+	public GroceryStorePOS(Map<String, Product> productList){
+		// List<Coupon> coupons = GetListOf 
+		Map<Barcode, Product> productList = productList;
+	}	
+
+	public Item getItem(String barcode) {
+		
+	}
+
+	public void HandleItemScan(String barcode, double qty) {  
+		// for single scanned items the qty will always be 1
+	 	// for items sold by weight the machine will prompt to use scale and qty will be in Lbs
+		// barcode is always valid item barcode
+		
+		Product product = productList.get(barcode);
+		
+		if (!items.contains(barcode))
+			Item newItem = new Item(product, qty);
+			items.put(barcode, newItem);
+		else {
+			Item currentItem = item.get(barcode)
+			item.setQty(item.getQty + qty);
+		
+		}
+
+	}
+
+	public void HandleCouponScan(String barcode){
+		// Barcode is always valid coupon barcode
+		// We only honor a coupon once for every barcode
+		if (couple == null)
+			coupon = GET_COUPON(barcode);
+		if (coupon.contains(barcode))
+			coupon.add(barcode)	
+	
+	}
+
+
+	public string GetCheckoutSummary(){
+		// 1. Apply the couple;
+		// items -  Get item based on the coupons
+		// Set validCoupns
+		Loop through scanned copouns
+			- if 
+				add to validCoupons
+		// Loop through items
+			// Total + total
+			// Print Each Line Item
+		// Loop Through Coupons
+			// Total - coupons discount
+		// Print Total
+		
+	}
+
+}
+
+Product (Pid, Name, UnitPerPrice, barcode)
+Item { Product product, Qty, Price = (Prduct.UnitPer * Qty)) }
+	// barcode, category 
+	
+Transaction (TId,  Total)
+Coupon( barcodeId, Category, DISCOUNT = 1 )
+
+
+
+/*
+Example output coming out from the Checkout method:
+
+
+Item			Unit Price	 Qty     Subtotal
+=============================================================
+Water Bottle		 $1.00		4	 $4.00
+Cambell soup		 $1.50		2	 $3.00
+Green Beans		     $1.25		1.6	 $2.00	
+Cpn: $1 off soups	-$1.00			-$1.00
+-------------------------------------------------------------
+			        	Total: 		 $8.00
+
+		
+
+
+
+
+*/
